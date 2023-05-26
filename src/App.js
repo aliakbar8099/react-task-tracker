@@ -10,6 +10,7 @@ import About from './components/About'
 const App = () => {
   const [showAddTask, setShowAddTask] = useState(false)
   const [tasks, setTasks] = useState([])
+  
   useEffect(() => {
     const getTasks = async () => {
       const tasksFromServer = await fetchTasks()
